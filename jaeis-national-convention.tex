@@ -1,0 +1,154 @@
+\documentclass[dvipdfmx]{jaeis-national-convention}
+
+\usepackage{graphicx}
+\usepackage{amssymb} % 記号
+
+% 表関連
+\usepackage{colortbl,array,xcolor}
+\usepackage{tabularx}
+\newcolumntype{C}{>{\centering}X}
+\renewcommand{\tabularxcolumn}[1]{m{#1}}
+\usepackage{booktabs}
+
+% 箇条書き
+\usepackage{enumitem}
+
+% citeを上付き (X) に変更
+\usepackage{cite}
+
+\let\cite=\citen
+\renewcommand\citeform[1]{\hspace{-0.1mm}\textsuperscript{(#1)}\hspace{-1mm}}
+
+% 参考文献のリストを (X) に変更
+\makeatletter 
+\renewcommand{\@biblabel}[1]{(#1)} 
+\makeatother
+
+\title{日本情報科教育学会 第10回全国大会 講演論文集}
+%\etitle{How to Write Your Paper for the JAEIS Research Reports}
+\subtitle{一般発表・講演論文の作成要領について}
+%\esubtitle{Towards Open Access}
+\abstract{ここには，発表される研究の概要をお書きください．講演論文集は，オフセット印刷（Ａ４判）での出版を行います．鮮明で読みやすく，正確な出版物とするために，論文集へ掲載する原稿は，以下の要領で作成をお願いいたします．また，以下の執筆要領を著しく逸脱した原稿は掲載できない場合があります．ご留意ください．}
+%\keyword{}
+
+\author{情報 太郎\hspace{3cm}情報 花子\hspace{3cm}情報 次郎}
+%\eauthor{Taro Joho$^\ast$\hspace{1cm}Hanako Joho$^\ast$\hspace{1cm}Jiro Joho$^{\ast\ast}$}
+
+\affiliation{情報大学教育学部\hspace{2cm}情報大学工学部\hspace{2cm}情報大学大学院大学}
+%\eaffiliation{
+%Faculty of Engineering, Joho University$^\ast$\\
+%Faculty of Education, Joho University$^{\ast\ast}$}
+
+\email{taro\_joho@xxx.yyy.ac.jp\hspace{5mm}hanako\_joho@zzz.yyy.ac.jp\hspace{5mm}jiro\_joho@kkk.lll.ac.jp}
+
+% 下線
+\usepackage{ulinej}
+
+% レイアウトの確認
+\usepackage{layout}
+
+\begin{document}
+
+%\layout
+
+\maketitle
+
+\section{はじめに}
+
+これは，一般発表を対象として日本情報科教育学会・全国大会講演論文集における講演要旨の原稿作成指針を作成要領としてまとめたものである．
+
+\section{講演要旨の原稿提出について}
+\subsection{提出期限}
+原稿の提出期限は，\ulinej{５月２８日(日)}です．なお，提出後の原稿の訂正はできませんので，十分に推敲いただいたものを，期限内にご提出ください．
+
+\subsection{提出方法}
+作成原稿(ディジタルデータ)を提出してください．形式は，PDFファイルとします．本学会のWebサイトからアップロードにて，提出いただきます．PDFへの変換の環境をお持ちでない場合に限りWordでも受け付けます．その他のフォーマットでの受け付けはできません．
+
+\section{原稿の作成について}
+\subsection{原稿サイズとページ数}
+原稿サイズはA4です．印刷される論文集もA4サイズとなります．ページ数は，研究発表は2ページ，デモンストレーションおよびポスター発表は1ページとします．なお，原稿にはページ番号を記載しないでください．
+
+\subsection{原稿の余白}
+原稿の余白は，上端20mm，下端24mm，左右23mm程度にしてください．その中の範囲を原稿記入範囲とさせていただきます．
+
+\subsection{使用言語}
+原稿に使用する言語は，日本語または英語です．
+
+\subsection{ページ構成}
+発表原稿の本文は，2段組で作成ください．ただし，このサンプルにもありますように，発表の概要(アブストラクト)までは，1段組でお願いします．
+
+先頭ページの原稿記入範囲の上部より順に，センタリングで論文タイトル，著者名，所属，メールアドレスの各項目を記入してください．複数の著者等を併記する場合には，項目毎に併記くださいますようお願いいたします．
+
+1ページあたりの行数は，50行にしてください．
+
+\subsection{文字のフォントとサイズ}
+フォントは，日本語の場合は明朝体もしくはゴシック体に，英語の場合はセリフ体もしくはサンセリフ体に準じ，特殊なフォントの使用は避けてください．文字サイズ（ポイント）は，論文集全体でのバランスを取るために，以下のようにお願いいたします．
+
+なお，フォントは，proportional, fixedのいずれの使用も可能です．
+
+\begin{table}[htb]
+	\caption{フォントとポイント}
+	\begin{tabularx}{\columnwidth}{llr}
+		\hline
+		\textbf{項目} & \textbf{フォント} & \textbf{ポイント} \\ \hline
+		タイトル & ゴシック & 14 \\
+		著者名 & ゴシック & 12 \\
+		所属 & ゴシック & 11 \\
+		メールアドレス & ゴシック& 11 \\
+		アブストラクト & 明朝 & 9 \\
+		各章の見出し & ゴシック & 11 \\
+		本文 & 明朝 & 10 \\
+		\hline
+	\end{tabularx}
+\end{table}
+
+アブストラクトは，原稿記入範囲の左右両側を更に1cm程度あけた範囲の領域に記載ください．
+
+\subsection{図表}
+図表は，本文中に埋め込んでください．図のキャプションは，下側中央に記載してください．また，表のキャプションは，上側中央に記載してください．
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=5cm]{jaeis-logo.pdf}
+\caption{本学会の名称と英語名}
+\label{fig:process-detail}
+\end{figure}
+
+カラーの図表・写真等をお使いになることは可能ですが，印刷される論文集は，白黒での印刷になります．原稿の図表・写真等では，コントラスト等を調整くださいますようお願いします．
+
+\subsection{参考文献}
+
+参考文献は，下記の「参考文献」欄の例を参考に，以下の必要項目を記述してください． 
+
+\begin{itemize}
+\item 論文誌・雑誌の場合
+	\cite{jaeis-sample-article:en}
+	\cite{jaeis-sample-article:ja}
+	\cite{jaeis-sample-article2:ja}
+	：著者名，タイトル，雑誌名，巻，号，ページ，発行年．
+\item 書籍の場合
+	\cite{jaeis-sample-book:ja}：著者名，書名，発行所，発行年．
+\end{itemize}
+
+また，本文中で参考文献
+\cite{jaeis-sample-article:en}
+\cite{jaeis-sample-article:ja}
+\cite{jaeis-sample-article2:ja}
+\cite{jaeis-sample-book:ja}
+に関連する箇所には，このように参考文献番号を上付きで付与してください．
+
+\section{ディジタルデータ提出手順}
+
+ディジタルデータの提出は，PDFファイルでお願いします．原稿の提出は，Webサイト
+http://jaeis-org.sakura.ne.jp/jaeis2017/regist/
+からお願いします．
+
+\section{おわりに}
+
+慣用的ではない用語については，本文または脚注に説明を加えてください．それでは，大会でお会いできるのを楽しみにしています．
+
+\bibliographystyle{jaeis}
+
+\bibliography{sample}
+
+\end{document}  
