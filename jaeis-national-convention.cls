@@ -121,9 +121,9 @@
 
 \def\@maketitle{%
 	\newpage\null
-	\begin{minipage}[c]{42zw}
-		\begin{center}
+	\begin{minipage}[c]{46zw}
 		\let\footnote\thanks
+		\begin{center}
 		\hspace{0.32cm}{\huge\textbf{\@title} \par}%
 		\vspace{2pt}
 		{\Large\@etitle\par}%
@@ -138,6 +138,8 @@
 			\fi%
 			\vspace{12pt}
 		\fi%
+		\end{center}
+
 		{\LARGE\@author\par}%
 		\vspace{-1pt}
 		{\normalsize\@eauthor\par}%
@@ -145,9 +147,8 @@
 		{\Large\@affiliation\par}%
 		{\normalsize\@eaffiliation\par}%
 		{\Large\@email\par}%
-		\end{center}
 
-		\vspace{4pt}
+		\vspace{8pt}
 
 		\hspace{1zw}
 		\begin{tabularx}{42zw}{X}
@@ -155,7 +156,7 @@
 		\hspace{1zw}{\small\@abstract\par}}
 		\end{tabularx}
 
-		\vspace{-12pt}
+		\vspace{-6pt}
 	\end{minipage}
 }
 
@@ -180,3 +181,5 @@
 \usepackage{secdot}
 \sectiondot{subsection}
 \sectiondot{subsubsection}
+
+\renewcommand\refname{\centerline{参考文献}\global\def\refname{参考文献}}
