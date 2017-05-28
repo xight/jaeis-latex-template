@@ -19,6 +19,9 @@
 % コメントアウト
 \usepackage{comment}
 
+% 行間スペース調整
+\usepackage{setspace}
+
 % 日本語のしおり文字化け対策
 \ifx\kanjiskip\undefined\else
   \usepackage{atbegshi}
@@ -152,11 +155,14 @@
 
 		\hspace{1zw}
 		\begin{tabularx}{42zw}{X}
-		{\setlength{\baselineskip}{12.056pt}
-		\hspace{1zw}{\small\@abstract\par}}
+
+		\begin{spacing}{0.8}
+		\hspace{1zw}{\small\@abstract\par}
+		\end{spacing}
+
 		\end{tabularx}
 
-		\vspace{-6pt}
+		\vspace{-20pt}
 	\end{minipage}
 }
 
