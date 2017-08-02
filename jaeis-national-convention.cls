@@ -143,20 +143,20 @@
 		\fi%
 		\end{center}
 
-		{\LARGE\@author\par}%
+		{\LARGE\gt{\@author}\par}%
 		\vspace{-1pt}
 		{\normalsize\@eauthor\par}%
 		\vspace{5pt}
-		{\Large\@affiliation\par}%
+		{\Large\gt{\@affiliation}\par}%
 		{\normalsize\@eaffiliation\par}%
-		{\Large\@email\par}%
+		{\Large\gt{\@email}\par}%
 
 		\vspace{8pt}
 
 		\hspace{1zw}
 		\begin{tabularx}{42zw}{X}
 
-		\begin{spacing}{0.8}
+		\begin{spacing}{0.9}
 		\hspace{1zw}{\small\@abstract\par}
 		\end{spacing}
 
@@ -168,19 +168,22 @@
 
 \renewcommand{\section}{%
 	\@startsection{section}{1}{\z@}%
-	{0.9\Cvs}% 前アキ
+	%{0.9\Cvs}% 前アキ
+	{0.4\Cvs}% 前アキ
 	{0.1\Cvs}% 後アキ
 	{\normalfont\large\headfont\raggedright}}
 
 \renewcommand{\subsection}{%
 	\@startsection{subsection}{1}{\z@}%
-	{0.9\Cvs}% 前アキ
+	%{0.9\Cvs}% 前アキ
+	{0.4\Cvs}% 前アキ
 	{0.1\Cvs}% 後アキ
 	{\normalfont\normalsize\headfont\raggedright}}
 
 \renewcommand{\subsubsection}{%
 	\@startsection{subsubsection}{1}{\z@}%
-	{0.9\Cvs}% 前アキ
+	%{0.9\Cvs}% 前アキ
+	{0.4\Cvs}% 前アキ
 	{0.1\Cvs}% 後アキ
 	{\normalfont\normalsize\headfont\raggedright}}
 
