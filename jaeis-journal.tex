@@ -1,0 +1,175 @@
+\documentclass[dvipdfmx]{jaeis-journal}
+
+\usepackage{graphicx}
+\usepackage{amssymb} % 記号
+
+% 表関連
+\usepackage{colortbl,array,xcolor}
+\usepackage{tabularx}
+\newcolumntype{C}{>{\centering}X}
+\renewcommand{\tabularxcolumn}[1]{m{#1}}
+\usepackage{booktabs}
+
+% 箇条書き
+\usepackage{enumitem}
+
+% citeを上付き (X) に変更
+\usepackage{cite}
+
+\let\cite=\citen
+\renewcommand\citeform[1]{\hspace{-0.1mm}\textsuperscript{(#1)}\hspace{-1mm}}
+
+% 参考文献のリストを (X) に変更
+\makeatletter 
+\renewcommand{\@biblabel}[1]{(#1)} 
+\makeatother
+
+\title{日本情報科教育学会誌}
+%\etitle{How to Write Your Paper for the JAEIS Research Reports}
+\subtitle{原稿執筆要領}
+%\esubtitle{Towards Open Access}
+\abstract{ここには，研究の概要をお書きください．400字以内で，目的，方法，結果を記述し，最後の行に，キーワード(3語以上6語以内)を明記してください．提出原稿は，鮮明で読みやすく，正確な出版物とするために，以下の執筆要領にしたがい，原稿の作成をお願いいたします．また，執筆要領で指定されているスタイルにそっていない原稿は，修正をお願いすることがあります．}
+\keyword{
+	情報科教育，高校教育，教育効果，キーワード4，キーワード5
+}
+
+\author{情報 太郎\hspace{3cm}情報 花子\hspace{3cm}情報 次郎}
+%\eauthor{Taro Joho$^\ast$\hspace{1cm}Hanako Joho$^\ast$\hspace{1cm}Jiro Joho$^{\ast\ast}$}
+
+\affiliation{情報大学教育学部\hspace{2cm}情報大学工学部\hspace{2cm}情報大学大学院大学}
+%\eaffiliation{
+%Faculty of Engineering, Joho University$^\ast$\\
+%Faculty of Education, Joho University$^{\ast\ast}$}
+
+\email{taro\_joho@xxx.yyy.ac.jp\hspace{5mm}hanako\_joho@zzz.yyy.ac.jp\hspace{5mm}jiro\_joho@kkk.lll.ac.jp}
+
+% 下線
+\usepackage{ulinej}
+
+% レイアウトの確認
+\usepackage{layout}
+
+\begin{document}
+
+%\layout
+
+\maketitle
+
+\section{はじめに}
+
+\ulinej{論文を投稿する際には，まず，日本情報科教育学会論文投稿要領をご確認ください．}
+
+このWordファイルには，論文タイトル，章，節，参考文献などそれぞれの書式を例示していますので，参考にしてください．
+
+原稿の提出期限は，学会のWebをご覧ください．また，原稿のファイル形式は，Word形式(docx形式)でお願いします．図や本文など，レイアウトの確認のため，DOCファイルと共にPDFファイルも合わせて送信願います．
+
+\section{原稿の作成について}
+\subsection{原稿サイズとページ数}
+
+原稿サイズはA4です．印刷される学会誌もA4サイズとなります．原則，頁数は最大10頁までとします．なお，原稿には頁番号を記入しないでください．
+
+\subsection{原稿の余白}
+
+原稿の余白は，上端20mm，下端24mm，左右23mmにしてください．その中の範囲を原稿記入範囲とさせていただきます．
+
+\subsection{使用言語}
+
+原稿に使用する言語は，日本語または英語でお願いします．
+
+\subsection{頁構成}
+
+先頭頁の原稿記入範囲の上部より順に，論文タイトル，著者名，所属の各項目を，1段組でセンタリングでして記入してください．このサンプルのように，副タイトルをつけても構いません．その後，研究概要，キーワードも記入してください．
+
+本文は，2段組で作成してください．1頁あたりの文字数は24文字，行数は45行としてください．
+
+\subsection{文字のフォントとサイズ}
+
+フォントは，MS明朝，MSゴシックを用い，特殊なフォントの使用は避けてください．文字サイズ(ポイント)は，学会誌全体でのバランスを取るために，表1を参考にお願いします．タイトルや章見出し等，このファイルの「スタイル」を使用してください．
+なお，フォントは，fixedを使用して下さい．本文中の半角英数字(参考文献番号含む)もMS明朝をお使い下さい．
+
+\subsection{図表}
+
+図表はなるべく本文に埋め込んでください．表キャプションは，上側中央に(表\ref{tab:font})，図キャプションは，下側中央に記載してください(図\ref{fig:logo})．
+図表の前後には，できるだけ改行を入れてください．
+
+\begin{table}[htb]
+	\caption{フォントとポイント}
+	\label{tab:font}
+	\begin{tabularx}{\columnwidth}{llr}
+		\hline
+		\textbf{項目} & \textbf{フォント} & \textbf{ポイント} \\ \hline
+		タイトル & MSゴシック & 14 \\
+		サブタイトル & MSゴシック & 12 \\
+		著者名 & MSゴシック & 12 \\
+		所属 & MSゴシック & 11 \\
+		メールアドレス & Arial & 11 \\
+		研究概要 & MS明朝 & 9 \\
+		各章の見出し & MSゴシック & 11 \\
+		章番号 & Arial & 11 \\
+		各節の見出し & MSゴシック & 10 \\
+		節番号 & Arial & 10 \\
+		本文 & MS明朝 & 10 \\
+		図表キャプション & ゴシック & 10 \\
+		参考文献(章題) & ゴシック & 10 \\
+		参考文献(項目) & MS明朝 & 9 \\
+		\hline
+	\end{tabularx}
+\end{table}
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=5cm]{jaeis-logo.pdf}
+\caption{本学会の名称と英語名}
+\label{fig:logo}
+\end{figure}
+
+
+また，投稿原稿にカラーの図表・写真等をお使いになることは可能ですが，学会誌は白黒印刷になります．
+
+\subsection{句読点等}
+
+原則として，「( )」，「英数」は半角を，「，」，「．」は全角を使用してください．
+
+\subsection{参考文献}
+
+参考文献は，以下の例を参考に記述してください\cite{jaeis-sample-article:en}．
+(発行年)の前は，半角スペースです．
+
+\begin{itemize}
+\item 論文誌・雑誌の場合
+	\cite{jaeis-sample-article:en}
+	\cite{jaeis-sample-article:ja}
+	\cite{jaeis-sample-article2:ja}
+	著者名：``タイトル''，雑誌名，巻，号，ページ (発行年)．
+\item 書籍の場合
+	\cite{jaeis-sample-book:ja}
+		著者名，``書名''，参照ページ，発行所 (発行年)．
+\end{itemize}
+
+また，本文中で参考文献
+\cite{jaeis-sample-article:en}
+\cite{jaeis-sample-article:ja}
+\cite{jaeis-sample-article2:ja}
+\cite{jaeis-sample-book:ja}
+に関連する箇所には，このように参考文献番号を上付きで付与してください．
+
+\section{原稿の提出について}
+
+論文投稿は，EasyChairをご利用ください．EasyChair による論文投稿の手順は，学会のＷｅｂページから参照可能です．
+
+\section{おわりに}
+
+慣用的ではない用語については，本文または脚注 に説明を加えてください．
+
+\section*{\hspace{9.5zw}謝辞}
+
+謝辞を書く場合には，本文と参考文献の間に入れてください．
+
+\vspace{-2zw}
+
+\bibliographystyle{jaeis}
+
+\bibliography{sample}
+
+\end{document}  
