@@ -19,6 +19,9 @@
 % コメントアウト
 \usepackage{comment}
 
+% 行間スペース調整
+\usepackage{setspace}
+
 % 日本語のしおり文字化け対策
 \ifx\kanjiskip\undefined\else
   \usepackage{atbegshi}
@@ -121,9 +124,9 @@
 
 \def\@maketitle{%
 	\newpage\null
-	\begin{minipage}[c]{42zw}
-		\begin{center}
+	\begin{minipage}[c]{46zw}
 		\let\footnote\thanks
+		\begin{center}
 		\hspace{0.32cm}{\huge\textbf{\@title} \par}%
 		\vspace{2pt}
 		{\Large\@etitle\par}%
@@ -138,45 +141,54 @@
 			\fi%
 			\vspace{12pt}
 		\fi%
-		{\LARGE\@author\par}%
+		\end{center}
+
+		{\LARGE\gt{\@author}\par}%
 		\vspace{-1pt}
 		{\normalsize\@eauthor\par}%
 		\vspace{5pt}
-		{\Large\@affiliation\par}%
+		{\Large\gt{\@affiliation}\par}%
 		{\normalsize\@eaffiliation\par}%
-		{\Large\@email\par}%
-		\end{center}
+		{\Large\gt{\@email}\par}%
 
-		\vspace{4pt}
+		\vspace{8pt}
 
 		\hspace{1zw}
 		\begin{tabularx}{42zw}{X}
-		{\setlength{\baselineskip}{12.056pt}
-		\hspace{1zw}{\small\@abstract\par}}
+
+		\begin{spacing}{0.9}
+		\hspace{1zw}{\small\@abstract\par}
+		\end{spacing}
+
 		\end{tabularx}
 
-		\vspace{-12pt}
+		\vspace{-20pt}
 	\end{minipage}
 }
 
 \renewcommand{\section}{%
 	\@startsection{section}{1}{\z@}%
-	{0.9\Cvs}% 前アキ
+	%{0.9\Cvs}% 前アキ
+	{0.4\Cvs}% 前アキ
 	{0.1\Cvs}% 後アキ
 	{\normalfont\large\headfont\raggedright}}
 
 \renewcommand{\subsection}{%
 	\@startsection{subsection}{1}{\z@}%
-	{0.9\Cvs}% 前アキ
+	%{0.9\Cvs}% 前アキ
+	{0.4\Cvs}% 前アキ
 	{0.1\Cvs}% 後アキ
 	{\normalfont\normalsize\headfont\raggedright}}
 
 \renewcommand{\subsubsection}{%
 	\@startsection{subsubsection}{1}{\z@}%
-	{0.9\Cvs}% 前アキ
+	%{0.9\Cvs}% 前アキ
+	{0.4\Cvs}% 前アキ
 	{0.1\Cvs}% 後アキ
 	{\normalfont\normalsize\headfont\raggedright}}
 
 \usepackage{secdot}
 \sectiondot{subsection}
 \sectiondot{subsubsection}
+
+\renewcommand\refname{\centerline{参考文献}\global\def\refname{参考文献}}
