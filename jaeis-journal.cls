@@ -1,5 +1,5 @@
 \NeedsTeXFormat{pLaTeX2e}
-\ProvidesClass{jaeis-national-convention}
+\ProvidesClass{jaeis-journal}
   [2017/04/28 Yoshiki Sato]
 
 \LoadClass[a4j, twocolumn, 11pt, uplatex, dvipdfmx]{jsarticle}
