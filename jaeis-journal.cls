@@ -124,28 +124,36 @@
 	\begin{minipage}[c]{42zw}
 		\begin{center}
 		\let\footnote\thanks
-		\hspace{0.32cm}{\huge\textbf{\@title} \par}%
+		{\huge\textgt{\@title} \par}%
 		\vspace{2pt}
-		{\Large\@etitle\par}%
-		%\vspace{10pt}
 
 		\if\relax\@subtitle\relax%
 			\else
 			{\LARGE\textbf{- \@subtitle -}\par}%
-			\if\relax\@esubtitle\relax%
-				\else
-				{\normalsize-\hspace{2mm}\@esubtitle\hspace{2mm}-\par}%
-			\fi%
-			\vspace{12pt}
 		\fi%
+
+		\vspace{12pt}
+
 		{\LARGE\textbf{\@author}\par}%
-		\vspace{-1pt}
-		{\normalsize\@eauthor\par}%
-		\vspace{5pt}
 		{\Large\textbf{\@affiliation}\par}%
-		{\normalsize\@eaffiliation\par}%
-		\vspace{2pt}
 		{\Large\textsf\@email\par}%
+
+		\vspace{12pt}
+
+		{\huge\textsf{\@etitle} \par}%
+		\vspace{2pt}
+
+		\if\relax\@esubtitle\relax%
+			\else
+			{\LARGE\textsf{- \@esubtitle -}\par}%
+		\fi%
+
+		\vspace{12pt}
+
+		{\LARGE\textsf{\@eauthor}\par}%
+		{\Large\textsf{\@eaffiliation}\par}%
+		{\Large\textsf\@email\par}%
+
 		\end{center}
 
 		\vspace{4pt}
