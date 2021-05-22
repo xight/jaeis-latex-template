@@ -7,8 +7,8 @@ update:
 
 clean:
 	latexmk -c
-	rm *.bbl *.dvi *.synctex.gz *-blx.bib *.run.xml *.fls
+	rm -f *.bbl *.dvi *.synctex.gz *-blx.bib *.run.xml *.fls
 
 distclean:
 	latexmk -C
-	rm *.bbl
+	rm -f *.bbl
