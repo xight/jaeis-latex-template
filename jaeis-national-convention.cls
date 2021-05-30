@@ -34,7 +34,11 @@
   \else
 	\AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UCS2}}
   \fi
-	\usepackage[dvipdfmx,colorlinks=false]{hyperref}
+	\usepackage[dvipdfmx]{hyperref}
+	\hypersetup{
+		colorlinks=true,
+		hidelinks=true
+	}
 \fi
 
 
